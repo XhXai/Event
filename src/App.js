@@ -1,25 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+// function App() {
+//   function myFunction() {
+//     alert('You clicked me!');
+//   }
+//   return (
+//     <button onClick={myFunction}>
+//       Click me
+//     </button>
+//   );
+// }
+
+
+// function App(){
+//   return(
+//     <button onClick={function handleClick() {
+//       alert('you clicked me')
+//     }}>
+//     </button>
+//   );
+// }
+
+
+// Using Arrow Functions
+
+function App(){
+  return(
+    <button onClick={() => {
+      alert('you clicked me')
+    }}> Click me
+    </button>
   );
 }
+
+
 
 export default App;
